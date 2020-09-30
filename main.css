@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+  color: #FFF;
+}
+
+button {
+  margin: 20px;
+  width: 200px;
+  height: 50px;
+}
+
+body {
+  background: #262626;
+}
+
+audio {
+  display: none;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  height: 90vh;
+}
+
+#letras0 li {
+  color: #F93;
+}
+
+#letras1 li {
+  color: #06A;
+}
+
+ul {
+  display: flex;
+}
+
+ul li {
+  opacity: 0;
+  list-style: none;
+
+  letter-spacing: 10px;
+  font-size: 6em;
+  font-weight: bold;
+  filter: blur(1px)
+}
+
+@keyframes apareceConHumo {
+  0% {
+    opacity: 0;
+    filter: blur(5px);
+  }
+
+  100% {
+    transform: rotate(0deg) translateY(0);
+    opacity: 1;
+    filter: blur(1px);
+  }
+}
+
+@keyframes desapareceConHumo {
+  0% {
+    transform: rotate(0deg) translateY(0);
+    opacity: 1;
+    filter: blur(1px);
+  }
+
+  100% {
+    transform: rotate(-90deg) translateY(-200px);
+    opacity: 0;
+    filter: blur(20px);
+  }
+}
