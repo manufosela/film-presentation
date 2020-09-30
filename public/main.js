@@ -23,10 +23,14 @@ const texto = [
   'NiMeChistes Man',
   'Luis Gomez',
   'Piquito de Oro',
-  'Juanan Sanz y Chema Àlvarez',
+  'Juanan Sanz',
+  'y Chema Àlvarez',
+  'en',
   'El dUI dUXnamico',
-  'La transformación digital se acerca...',
-  '...proximamente en cienes'
+  'La transformación digital',
+  'se acerca...',
+  '...próximamiente',
+  'en cienes'
 ];
 
 function efecto(objs, n) {
@@ -75,6 +79,9 @@ function turron() {
     document.getElementById('letras1').textContent = '';
     if (contador < texto.length) {
       turron();
+    } else {
+      document.getElementById('letras0').textContent = '¡¡NO TE LO PUEDES PERDER!!';
+      document.getElementById('letras1').textContent = 'O SÍ... XD';
     }
   }, 15000);
 }
