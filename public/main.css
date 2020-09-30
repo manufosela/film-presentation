@@ -62,7 +62,7 @@ ul li {
   }
 }
 
-@keyframes desapareceConHumo {
+@keyframes desapareceConHumo0 {
   0% {
     transform: rotate(0deg) translateY(0);
     opacity: 1;
@@ -71,6 +71,19 @@ ul li {
 
   100% {
     transform: rotate(-90deg) translateY(-200px);
+    opacity: 0;
+    filter: blur(20px);
+  }
+}
+@keyframes desapareceConHumo1 {
+  0% {
+    transform: rotate(0deg) translateY(0);
+    opacity: 1;
+    filter: blur(1px);
+  }
+
+  100% {
+    transform: rotate(90deg) translateY(-200px);
     opacity: 0;
     filter: blur(20px);
   }

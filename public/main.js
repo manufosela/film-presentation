@@ -7,12 +7,26 @@ const texto = [
   'Lucía Pablos',
   'Produced by',
   'Carlos Moure',
-  'Interpreted by',
-  'Carlos Matias in',
-  'PaseitosMan',
-  'Carlos Cañado in',
-  'CalendarnMan',
-  'La transformación digital se acerca...'
+  'Interpretado y',
+  'encabezado por',
+  'Carlos Matias',
+  'Paseos Agile',
+  'Marta Velayos',
+  'Lean Woman',
+  'Toni Navarro',
+  'Agile MadBcn',
+  'Carlos Cañado',
+  'CalendarVaAMisa',
+  'Rei Aguilera',
+  'Zara Heart',
+  'Mánu Fosela',
+  'NiMeChistes Man',
+  'Luis Gomez',
+  'Piquito de Oro',
+  'Juanan Sanz y Chema Àlvarez',
+  'El dUI dUXnamico',
+  'La transformación digital se acerca...',
+  '...proximamente en cienes'
 ];
 
 function efecto(objs, n) {
@@ -24,7 +38,7 @@ function efecto(objs, n) {
       el.style = 'animation: apareceConHumo 5s linear forwards';
     }, t1);
     setTimeout(function () {
-      el.style = 'animation: desapareceConHumo 5s linear forwards';
+      el.style = 'animation: desapareceConHumo' + n + ' 5s linear forwards';
     }, ++i * 200 + 6000 + t1);
   });
   objs.forEach((el) => {
